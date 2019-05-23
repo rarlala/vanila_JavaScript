@@ -1,0 +1,23 @@
+.js-clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2014/04/14/20/11/japanese-cherry-trees-324175_960_720.jpg);
+    background-size:cover;
+}
+
+h1{
+    font-size: 10em;
+    font-weight: 500;
+    color:#fff;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 100;
+    color:palevioletred;
+}
