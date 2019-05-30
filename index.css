@@ -8,6 +8,7 @@
 body{
     background-image: url(https://cdn.pixabay.com/photo/2014/04/14/20/11/japanese-cherry-trees-324175_960_720.jpg);
     background-size:cover;
+    transition: color 0.5s ease-in-out;
 }
 
 h1{
@@ -20,4 +21,13 @@ h2{
     font-size: 3em;
     font-weight: 100;
     color:palevioletred;
+}
+
+.form,
+.greetings{
+    display: none;
+}
+
+.showing{
+    display: block;
 }
