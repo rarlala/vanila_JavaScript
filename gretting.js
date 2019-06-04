@@ -14,6 +14,7 @@ function handleSubmit(){
     const currentValue = input.value;
     //console.log(currentValue);
     paintGreeting(currentValue);
+    saveName(currentValue);
 }
 
 function askForName(){
@@ -25,7 +26,6 @@ function paintGreeting(text){
     form.classList.remove(SHOWING_ON);
     greeting.classList.add(SHOWING_ON);
     greeting.innerText = `Hello ${text}`
-    saveName(currentValue);
 }
 
 function loadName(){

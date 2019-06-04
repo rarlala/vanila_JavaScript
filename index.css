@@ -6,21 +6,19 @@
 }
 
 body{
-    background-image: url(https://cdn.pixabay.com/photo/2014/04/14/20/11/japanese-cherry-trees-324175_960_720.jpg);
-    background-size:cover;
     transition: color 0.5s ease-in-out;
 }
 
 h1{
     font-size: 10em;
-    font-weight: 500;
-    color:palevioletred;
+    font-weight: 800;
+    color:#fff;
 }
 
 h2{
     font-size: 3em;
-    font-weight: 100;
-    color:palevioletred;
+    font-weight: 500;
+    color:yellow;
 }
 
 .form,
@@ -30,4 +28,56 @@ h2{
 
 .showing{
     display: block;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+input{
+    border:none;
+    background: rgba(0, 0, 0, 0);
+    border-bottom:2px solid #fff;
+    font-size: 1.3em;
+    color:white;
+    text-align: center;
+}
+
+input::placeholder{
+    color:white;
+}
+
+.js-toDoList{
+    color:yellow;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.js-toDoList button{
+    margin-left:10px;
+    border:none;
+    border-radius: 100%;
+    background:  rgba(0, 0, 0, 0);
+    padding: 5px;
+    color:white;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.js-weather, .greetings{
+    color:white;
 }
